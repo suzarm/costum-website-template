@@ -1,0 +1,139 @@
+$bg-color: rgba(239, 245, 255, 1);
+$bg-col: rgba(250, 250, 250, 1);
+$bg-wr-col:rgba(255, 255, 255, 1);
+$color:rgba(255, 202, 51, 1);
+$text-color:rgba(4, 26, 63, 1);
+
+
+.section{
+
+&.wrapper-box{
+    background-color:$bg-color;
+}
+    &.wrapper{
+        background-color: $bg-color;
+    
+    }
+    &.box{
+        background-color:$bg-wr-col;
+          
+    h2{
+        color:$color;
+        font-weight:bold;
+    }
+    span{
+        color:$text-color;
+        font-weight:bold;
+    }
+    p{
+        font-weight:bold;
+        font-size:32px ;
+        color:$text-color;
+        margin-left:220px;
+    }
+    }
+
+    &.header{
+        background-color:$bg-col;
+        width:1750px;
+        height:750px;
+        position:relative;
+        border-bottom-left-radius: 300px;
+        left:145px;
+      
+    h2{
+        color:$color;
+        font-weight:bold;
+    }
+
+    span{
+        color:$text-color;
+        font-weight:bold;
+    }
+
+    p{
+        font-weight:bold;
+        font-size:32px ;
+        color:$text-color;
+        margin-left:220px;
+    }
+
+    .text{
+        font-family:'Montserrat Alternates';
+        font-size:48px;
+        margin-top:200px;
+        line-height:72.8px ;
+        }
+
+    img{
+        position:absolute;
+        left:100px;
+        top:-30px;
+        }
+        }
+
+    &.main{
+    h4,h5{
+        color:$text-color;
+        font-weight:bold;
+    }
+    .card{
+        border-radius:10px;
+    }
+    a{
+        padding:5px 20px;
+    }
+    }
+    &.footer{
+        background-color:$bg-col;
+
+        
+    h4{
+        color:$color;
+        font-weight:bold;
+    }
+    span{
+        color:$text-color;
+        font-weight:bold;
+    }
+
+    p{
+    font-weight:bold;
+    color:$text-color;
+    font-size:24px;
+    }
+    
+    }
+    &.main-box{
+      
+    .img-size{
+        width:82px;
+        height:100px;
+    }
+    
+    }
+    &.section.costum{
+       .mainpage{
+        padding-left:313px;
+       }
+        a,span,h1,h5{
+            color:$text-color;
+            font-weight: bold;
+        }
+        h4{
+            color:$color;
+            font-weight: bold;
+        }
+        #darthvader{
+            padding-top:130px;
+        }
+    }
+    &.section.content{
+
+        h4,p{
+            color:$text-color;
+
+        }
+    }
+}
+
