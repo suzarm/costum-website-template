@@ -36,10 +36,11 @@
                                 <img src="images/41NIVpDoCbL 1.png " class="img-size mb-3" >
                                 <img src="images/81cVfZkQD+L 1.png " class="img-size">
                                 <img src="images/Group 10.png " class="img-size">
-                                <img src="images/Group 11.png " class="img-size">
+                                <img src="images/Group 11 (1).png" class="img-size">
                             </div>
-                            <div class="main-box-pic pt-5 pl-5">
-                                <img src="images/darth vader 1.png">
+                            <div class="main-box-pic pt-5 pl-5" id="button open-popup">
+                                <img src="images/darth vader 1.png" data-toggle="modal" data-target="#pictureModal">
+                                
                                 </div>
                         </div>
                     </div>
@@ -51,8 +52,7 @@
                         <p class="text-muted">Комбенизон, шлем, плащ, жилет</p>
                         <h5>Размер:</h5>
                         <p class="text-muted">48-52</p>
-                        <button  type="button" class="btn btn-warning text-white"data-container="body" data-toggle="popover" data-placement="top" data-content="Аренда костюма “Дарт Вейдер”">Оставить заявку</button>
-                       
+                        <button  type="button" class="btn btn-warning text-white" data-toggle="modal" data-target="#exampleModal">Оставить заявку</button>
                         <p class="pl-4 text-muted">В наличии: 1</p>
                     </div>
                 </div>
@@ -80,8 +80,76 @@
                 </div>
             </div>
         </div>
-
     </div>
-    <script src="./jquery.js"></script>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Аренда костюма “Дарт Вейдер”<p style="font-size:14px";> Пожалуйста, укажите ваши контактные данные, чтобы мы забронировали костюм на ваше имя</p></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <div class="modal-body">
+            <form>
+                <div class="form-group d-flex flex-column">
+                    <input type="text" placeholder="Как вас зовут?" class="mt-2 pl-2">
+                    <input type="text" placeholder="+7 (977) 325 - 41 -60  " class="mt-2 pl-2">
+                    <input type="text" placeholder="На сколько дней арендуете? " class="mt-2 pl-2">
+                </div>
+            </form>
+            <i class="bi bi-square d-flex"><p class=pl-2 style="font-size:12px;">Я согласен на обработку моих персональных данных</p></i>
+            <a href="#" class="btn btn-warning btn-block text-white">Оставить заявку</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade"  id="pictureModal" tabindex="-1" role="dialog" aria-labelledby="pictureModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+           <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="section main-box d-flex pt-5 pl-5">
+                            <div class="box-pic d-flex flex-column pt-5">
+                                <img src="images/darth vader 2.png" class="img-size mb-3 border border-warning">
+                                <img src="images/41NIVpDoCbL 1.png " class="img-size mb-3" >
+                                <img src="images/81cVfZkQD+L 1.png " class="img-size">
+                                <img src="images/Group 10.png " class="img-size">
+                                <img src="images/Group 11 (1).png" class="img-size">
+                            </div>
+                            <div class="main-box-pic pt-5 ">
+                                <img src="images/darth vader 1.png">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-4" id="picturemodal">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h1>Дарт Вейдер</h1>
+                        <h6 class="text-muted pt-3">0123238313</h6>
+                        <p>Дарт Ве́йдер, также известный под своим настоящим именем как Э́накин Скайуо́кер — центральный персонаж первых шести эпизодов саги «Звёздные войны». Также появляется в фильме «Изгой-один».</p>
+                        <h4>1500₽/сутки.</h4>
+                        <h5 class="pt-3">Комплектация:</h5>
+                        <p class="text-muted">Комбенизон, шлем, плащ, жилет</p>
+                        <h5>Размер:</h5>
+                        <p class="text-muted">48-52</p>
+                        <button  type="button" class="btn btn-warning text-white" data-toggle="modal" data-target="#exampleModal">Оставить заявку</button>
+                        <p class="pl-4 text-muted">В наличии: 1</p>
+                    </div>
+                </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+   
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.bundle.min.js" integrity="sha512-igl8WEUuas9k5dtnhKqyyld6TzzRjvMqLC79jkgT3z02FvJyHAuUtyemm/P/jYSne1xwFI06ezQxEwweaiV7VA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
